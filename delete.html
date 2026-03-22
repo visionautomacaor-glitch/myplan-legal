@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Excluir Conta — MyPlan</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8fafc; color: #1e293b; line-height: 1.7; }
+  .header { background: linear-gradient(135deg, #dc2626, #ef4444);
+    padding: 48px 24px; text-align: center; }
+  .header h1 { color: white; font-size: 2rem; font-weight: 800; }
+  .header p { color: rgba(255,255,255,0.8); margin-top: 8px; font-size: 0.95rem; }
+  .container { max-width: 700px; margin: 40px auto; padding: 0 24px 60px; }
+  .card { background: white; border-radius: 16px; padding: 36px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06); margin-bottom: 20px; }
+  .card-warning { background: #fff7ed; border: 1px solid #fed7aa; }
+  h2 { font-size: 1.1rem; font-weight: 700; color: #dc2626;
+    margin-bottom: 12px; padding-bottom: 8px;
+    border-bottom: 2px solid #fee2e2; }
+  h2.blue { color: #1B3A9E; border-bottom-color: #e2e8f0; }
+  p, li { font-size: 0.95rem; color: #475569; margin-bottom: 8px; }
+  ul { padding-left: 20px; margin-bottom: 8px; }
+  .steps { counter-reset: step; }
+  .step { display: flex; align-items: flex-start; gap: 16px;
+    margin-bottom: 20px; padding: 16px; background: #f8fafc;
+    border-radius: 12px; }
+  .step-num { background: #1B3A9E; color: white; width: 32px; height: 32px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 0.9rem; flex-shrink: 0; }
+  .step-content strong { display: block; color: #1e293b;
+    font-size: 0.95rem; margin-bottom: 4px; }
+  .step-content p { margin: 0; font-size: 0.88rem; }
+  .warning-icon { font-size: 1.5rem; margin-bottom: 12px; }
+  .footer { text-align: center; color: #94a3b8; font-size: 0.85rem; margin-top: 40px; }
+  a { color: #2563EB; text-decoration: none; }
+  .email-box { background: #EFF6FF; border: 1px solid #bfdbfe;
+    border-radius: 10px; padding: 16px; margin-top: 12px; }
+  .email-box strong { color: #1B3A9E; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🗑️ Excluir Conta</h1>
+  <p>MyPlan — Solicitação de exclusão de dados</p>
+</div>
+<div class="container">
+
+  <div class="card card-warning">
+    <div class="warning-icon">⚠️</div>
+    <h2 style="color:#c2410c; border-color:#fed7aa">Atenção — Esta ação é irreversível</h2>
+    <p>Ao excluir sua conta, os seguintes dados serão <strong>permanentemente removidos</strong>:</p>
+    <ul>
+      <li>Todas as suas listas e tarefas</li>
+      <li>Todos os arquivos, fotos e notas do Cofre Seguro</li>
+      <li>Seu histórico de pagamentos e contas cadastradas</li>
+      <li>Suas colaborações e listas compartilhadas</li>
+      <li>Seu perfil e dados de conta</li>
+    </ul>
+    <p style="margin-top:12px"><strong>Esta ação não pode ser desfeita.</strong></p>
+  </div>
+
+  <div class="card">
+    <h2 class="blue">Como excluir pelo aplicativo</h2>
+    <p>A forma mais rápida é diretamente pelo app MyPlan:</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <strong>Abra o MyPlan</strong>
+          <p>Faça login na sua conta normalmente</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <strong>Vá em Configurações</strong>
+          <p>Toque no ícone de 3 pontinhos no canto superior direito</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <strong>Role até "Sessão"</strong>
+          <p>No final da tela de configurações</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <strong>Toque em "Excluir conta"</strong>
+          <p>Confirme com sua senha quando solicitado</p>
+        </div>
+      </div>
+    </div>
+    <p>Seus dados serão excluídos imediatamente após a confirmação.</p>
+  </div>
+
+  <div class="card">
+    <h2 class="blue">Solicitação por e-mail</h2>
+    <p>Se não conseguir acessar o app, envie um e-mail com o assunto <strong>"Excluir minha conta MyPlan"</strong> informando o e-mail cadastrado. Processamos a solicitação em até <strong>7 dias úteis</strong>.</p>
+    <div class="email-box">
+      <strong>📧 suporte@myplan.app</strong>
+      <p style="margin-top:6px; font-size:0.88rem">Inclua no e-mail: seu endereço de e-mail cadastrado no MyPlan</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="blue">O que acontece após a exclusão</h2>
+    <ul>
+      <li>Seus dados pessoais são removidos imediatamente dos servidores ativos</li>
+      <li>Backups residuais são eliminados em até <strong>30 dias</strong></li>
+      <li>Dados de compras premium são mantidos pelo Google Play conforme as políticas deles</li>
+      <li>Dados anonimizados de uso (sem identificação pessoal) podem ser retidos para fins estatísticos</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 MyPlan. Todos os direitos reservados.</p>
+    <p style="margin-top:8px"><a href="privacy_policy.html">Política de Privacidade</a></p>
+  </div>
+</div>
+</body>
+</html>
